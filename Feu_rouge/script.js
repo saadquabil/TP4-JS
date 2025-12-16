@@ -44,7 +44,10 @@ document.getElementById('btn-start').addEventListener('click', () => {
 document.getElementById('btn-stop').addEventListener('click', () => {
     clearInterval(interval);
     interval = null;
-    [red, yellow, green].forEach(l => l.classList.remove('active', 'blink'));
+    red.classList.remove('active');
+    yellow.classList.remove('active');
+    green.classList.remove('active', 'blink');
     display.textContent = '--';
     display.style.color = '#ef4444';
 });
+
