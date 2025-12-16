@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte à Rebours Interactif</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Compte à Rebours</h1>
+
+        <div class="input-group">
+            <input type="number" id="timeInput" placeholder="Entrez le temps en secondes" min="1">
+            <button id="startBtn">Démarrer</button>
+        </div>
+
+        <div class="timer-display">
+            <span id="timer">00</span>
+        </div>
+
+        <p id="message" class="hidden">Temps écoulé !</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
